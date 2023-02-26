@@ -1,0 +1,16 @@
+/* celý vypisovaný text */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-box h1 {
+    padding: 15px 100px;
+}
+.text-box p {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 15px 100px;
+}

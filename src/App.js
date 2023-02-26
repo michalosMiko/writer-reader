@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import TextToSpeech from "./components/TextToSpeach"
+import TextWriter from "./Textwriter"
+// import TextWriter from "./components/Twriter"
 
-function App() {
+// čtečka textu
+const App = () => {
+  // ťext který se přečte ale nezobrazí
+  const text = 'Vítáme vás na palubě lodi M-web-x ';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TextWriter />
+  
+      
+        
+      <TextToSpeech text={text}/>
+      
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
